@@ -1,0 +1,30 @@
+@font-face {
+  font-family: mikhak;
+  src: url("../fonts/mikhak/Mikhak-VF-FD[wght,KSHD,DSTY].woff2") format("woff2"); }
+
+body {
+  font-family: mikhak; }
+
+.main {
+  max-width: 1500px;
+  position: relative; }
+
+header {
+  position: relative;
+  background: url("../img/slide.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat; }
+  header #top_menu .navigation-link {
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    font-size: 1.2rem;
+    color: rgba(30, 30, 31, 0.6); }
+    header #top_menu .navigation-link:hover {
+      color: #f2c4a3; }
+  header #top_menu .left .navigation-icon {
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    font-size: 1.5rem;
+    color: rgba(30, 30, 31, 0.6); }
+    header #top_menu .left .navigation-icon:hover {
+      color: #f2c4a3; }

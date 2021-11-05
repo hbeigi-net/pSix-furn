@@ -1,0 +1,28 @@
+@mixin link ($linktype)
+{
+    @if ($linktype == 1 ) {
+        color : $dark-color; 
+        &:hover
+        {
+            color: $light-color;
+        }
+    }
+    @else if ($linktype == 2 )
+    {
+        color: $light-color;
+        &:hover
+        {
+            color : $dark-color; 
+         
+        }
+    }
+    @else if ($linktype == 3)
+    {
+        color : $info-color;
+        &:hover
+        {
+            color : $alert-color;
+        }
+    }
+    
+}

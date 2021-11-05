@@ -1,0 +1,56 @@
+@import "variables";
+@import "mixin";
+@font-face {
+    font-family: mikhak;
+    src: url("../fonts/mikhak/Mikhak-VF-FD[wght\,KSHD\,DSTY].woff2")format("woff2");
+}
+body
+{
+    font-family: mikhak;
+
+}
+.main
+{
+    max-width: 1500px;
+    position: relative;
+}
+
+header 
+{
+    position: relative;
+    background : url("../img/slide.jpg");
+    height : 100vh ; 
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    #top_menu
+    {   
+    
+        .navigation-link
+        {
+            transition : all .3s cubic-bezier(0.19, 1, 0.22, 1);
+            font-size : 1.2rem ; 
+            color : $dark-color;
+            &:hover
+            {
+                color : $second-color;
+            }
+           
+        }
+        .left
+        {
+        
+        .navigation-icon
+        {
+            transition : all .3s cubic-bezier(0.19, 1, 0.22, 1);
+            font-size : 1.5rem ; 
+            color : $dark-color;
+            &:hover
+            {
+                color : $second-color;
+            }
+        }
+        }
+    }
+}
