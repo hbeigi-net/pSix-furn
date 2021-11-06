@@ -3,10 +3,15 @@
   src: url("../fonts/mikhak/Mikhak-VF-FD[wght,KSHD,DSTY].woff2") format("woff2"); }
 
 body {
-  font-family: mikhak; }
+  font-family: mikhak;
+  overflow-x: hidden;
+  padding-bottom: 300px; }
 
 .bg-main {
   background: #92d3d3; }
+
+.bg-sec {
+  background: #f2c4a3; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -21,7 +26,7 @@ body {
 header {
   position: relative;
   background: url("../img/slide.jpg");
-  height: 100vh;
+  height: 120vh;
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat; }
@@ -40,3 +45,12 @@ header {
     header .banner h4 {
       font-size: 4rem;
       color: #92d3d3; }
+
+#product_section {
+  position: relative; }
+  #product_section .title {
+    position: absolute;
+    top: 0;
+    padding: 1rem 2rem;
+    transform: translate(-50%, -50%);
+    border-radius: 30px 2px 30px 2px; }

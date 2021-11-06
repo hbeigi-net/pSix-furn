@@ -7,11 +7,16 @@
 body
 {
     font-family: mikhak;
-
+    overflow-x: hidden;
+    padding-bottom: 300px;
+    
 }
 .bg-main
 {
     background : $main-color;
+}
+.bg-sec{
+    background : $second-color;
 }
 .cursor-pointer
 {
@@ -24,14 +29,14 @@ body
     &:hover
     {
         color : $second-color;
-    }
+    }   
    
 }
 header 
 {
     position: relative;
     background : url("../img/slide.jpg");
-    height : 100vh ; 
+    height : 120vh ; 
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -70,5 +75,20 @@ header
             color : $main-color;
         }
         
+    }
+}
+
+#product_section
+{
+    position: relative;
+    .title
+    {
+        position: absolute;
+        top: 0;
+        
+        
+        padding: 1rem 2rem ;
+        transform: translate(-50%,-50%);
+        border-radius: 30px 2px 30px 2px;
     }
 }
