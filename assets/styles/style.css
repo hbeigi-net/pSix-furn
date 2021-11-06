@@ -5,9 +5,18 @@
 body {
   font-family: mikhak; }
 
-.main {
-  max-width: 1500px;
-  position: relative; }
+.bg-main {
+  background: #92d3d3; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+.navigation-link {
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  font-size: 1.2rem;
+  color: rgba(30, 30, 31, 0.6); }
+  .navigation-link:hover {
+    color: #f2c4a3; }
 
 header {
   position: relative;
@@ -16,15 +25,18 @@ header {
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat; }
-  header #top_menu .navigation-link {
-    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-    font-size: 1.2rem;
-    color: rgba(30, 30, 31, 0.6); }
-    header #top_menu .navigation-link:hover {
-      color: #f2c4a3; }
   header #top_menu .left .navigation-icon {
     transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
     font-size: 1.5rem;
     color: rgba(30, 30, 31, 0.6); }
     header #top_menu .left .navigation-icon:hover {
       color: #f2c4a3; }
+  header .banner {
+    position: absolute;
+    top: 20%;
+    left: 10%; }
+    header .banner h2 {
+      font-size: 7rem; }
+    header .banner h4 {
+      font-size: 4rem;
+      color: #92d3d3; }

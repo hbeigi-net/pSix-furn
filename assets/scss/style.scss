@@ -9,12 +9,24 @@ body
     font-family: mikhak;
 
 }
-.main
+.bg-main
 {
-    max-width: 1500px;
-    position: relative;
+    background : $main-color;
 }
-
+.cursor-pointer
+{
+    cursor: pointer;
+}
+.navigation-link{ 
+    transition : all .3s cubic-bezier(0.19, 1, 0.22, 1);
+    font-size : 1.2rem ; 
+    color : $dark-color;
+    &:hover
+    {
+        color : $second-color;
+    }
+   
+}
 header 
 {
     position: relative;
@@ -26,18 +38,8 @@ header
 
     #top_menu
     {   
-    
-        .navigation-link
-        {
-            transition : all .3s cubic-bezier(0.19, 1, 0.22, 1);
-            font-size : 1.2rem ; 
-            color : $dark-color;
-            &:hover
-            {
-                color : $second-color;
-            }
-           
-        }
+       
+       
         .left
         {
         
@@ -52,5 +54,21 @@ header
             }
         }
         }
+    }
+    .banner
+    {
+        position: absolute;
+        top : 20%;
+        left : 10%;
+        h2
+        {
+            font-size: 7rem;
+        }
+        h4
+        {
+            font-size: 4rem;
+            color : $main-color;
+        }
+        
     }
 }

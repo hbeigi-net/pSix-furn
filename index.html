@@ -13,9 +13,30 @@
 <body>
     
     <header>
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div id="collapseOne" class="collapse "  data-bs-parent="#accordionExample">
+            <div class="card-body bg-main">
+                <ul class="list-unstyled d-flex flex-column justify-content-center text-center">
+                    <li class="mx-3"><a href="" class="text-decoration-none navigation-link">خانه</a></li>
+                    <li class="mx-3"><a href="" class="text-decoration-none navigation-link">آرشیو </a></li>
+                    <li class="mx-3"><a href="" class="text-decoration-none navigation-link">جدیدترین ها </a></li>
+                    <li class="mx-3"><a href="" class="text-decoration-none navigation-link">ارتباط با ما </a></li>
+                    <li class="mx-3"><a href="" class="text-decoration-none navigation-link">درباره ما </a></li>
+                </ul>
+            </div>
+            </div>
+          </div>
+        </div>
         <div class="container-fluid" class = "">
             <div id="top_menu" class= " d-flex justify-content-between align-items-center px-lg-3 ">
                 <div class="right">
+                    <div class="d-lg-none display-2 cursor-pointer ms-4" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        
+                        <i class="fa fa-navicon" aria-hidden="true"></i>
+                        
+                        
+                    </div>
                     <div class="nav-menu d-none d-lg-block " >
                         <ul class="list-unstyled d-flex align-items-center mb-0">
                             <li class="mx-3"><a href="" class="text-decoration-none navigation-link">خانه</a></li>
@@ -25,6 +46,7 @@
                             <li class="mx-3"><a href="" class="text-decoration-none navigation-link">درباره ما </a></li>
                         </ul>
                     </div>
+
                 </div>
                 <div class="left d-flex p-3 ">
                     <ul class="list-unstyled d-flex align-items-center mb-0">
@@ -38,8 +60,9 @@
 
             </div>
         </div>
-        <div class="banner">
-
+        <div class="banner d-none d-lg-block">
+            <h2>مبلمان</h2>
+            <h4 class = "">مدرن</h4>
         </div>
     </header>
     <script src="./ref/jquery/jquery-3.6.0.min.js"></script> 
