@@ -41,6 +41,30 @@ body
     }   
    
 }
+button.bg-main
+{
+    transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+button.bg-main:hover
+{
+    background-color:darken($main-color,5) ;
+    transform: scale(.95,.95)  rotateZ(1deg);
+    
+
+}
+.bg-info-color
+{
+    background-color: $info-color;
+}
+button.bg-info-color
+{
+    transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+button.bg-info-color:hover
+{
+    background-color: darken($color:$info-color, $amount: 5);
+    transform: scale(.95,.95)  rotateZ(-1deg);
+}
 header 
 {
     position: relative;
@@ -104,12 +128,7 @@ header
     position: relative;
     .title
     {
-        position: absolute;
-        top: 0;
         
-        
-        padding: 1rem 2rem ;
-        transform: translate(-50%,-50%);
         border-radius: 30px 2px 30px 2px;
     }
 }
