@@ -2,10 +2,16 @@
   font-family: mikhak;
   src: url("../fonts/mikhak/Mikhak-VF-FD[wght,KSHD,DSTY].woff2") format("woff2"); }
 
+html {
+  overflow-x: hidden; }
+
 body {
   font-family: mikhak;
   overflow-x: hidden;
   padding-bottom: 300px; }
+
+.max-width-100 {
+  max-width: 100% !important; }
 
 .bg-main {
   background: #92d3d3; }
@@ -30,6 +36,12 @@ header {
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat; }
+  header #top_menu .left img {
+    max-height: 100px;
+    max-width: 100px !important;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #f2c4a3; }
   header #top_menu .left .navigation-icon {
     transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
     font-size: 1.5rem;

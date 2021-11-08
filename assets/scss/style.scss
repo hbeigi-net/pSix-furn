@@ -4,12 +4,21 @@
     font-family: mikhak;
     src: url("../fonts/mikhak/Mikhak-VF-FD[wght\,KSHD\,DSTY].woff2")format("woff2");
 }
+html
+{
+    overflow-x: hidden;
+}
 body
 {
     font-family: mikhak;
     overflow-x: hidden;
     padding-bottom: 300px;
     
+}
+.max-width-100
+{
+    max-width:100% !important ;
+   
 }
 .bg-main
 {
@@ -36,17 +45,29 @@ header
 {
     position: relative;
     background : url("../img/slide.jpg");
-    height : 120vh ; 
+    height : 120vh ;  
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
 
     #top_menu
     {   
+           
+               
+            
+        
        
        
         .left
         {
+            img
+            {
+                max-height: 100px;
+                max-width: 100px !important;
+                padding: 1rem;
+                border-radius: 50%;
+                background-color: $second-color;
+            }
         
         .navigation-icon
         {
