@@ -11,6 +11,11 @@ body
     padding-bottom: 300px;
     
 }
+.max-width-100
+{
+    max-width:100vw !important ;
+    overflow: hidden;
+}
 .bg-main
 {
     background : $main-color;
