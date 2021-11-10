@@ -7,8 +7,7 @@ html {
 
 body {
   font-family: mikhak;
-  overflow-x: hidden;
-  padding-bottom: 300px; }
+  overflow-x: hidden; }
 
 .max-width-100 {
   max-width: 100% !important; }
@@ -46,6 +45,9 @@ button.bg-info-color:hover {
   background-color: #826beb;
   transform: scale(0.95, 0.95) rotateZ(-1deg); }
 
+.fs-10 {
+  font-size: 4rem; }
+
 header {
   position: relative;
   background: url("../img/slide.jpg");
@@ -79,3 +81,12 @@ header {
   position: relative; }
   #product_section .title {
     border-radius: 30px 2px 30px 2px; }
+
+#counters_section {
+  margin-top: 8rem; }
+  #counters_section .container .row .transform {
+    background-color: #81ee93; }
+
+#footer {
+  margin-top: 5rem;
+  background-color: rgba(30, 30, 31, 0.6); }
